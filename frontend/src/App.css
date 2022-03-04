@@ -1,5 +1,4 @@
 .App {
- 
   height: 760px; 
   background-color: rgb(255, 255, 255);
   display: grid;
@@ -9,13 +8,11 @@
 }
 .picker1 {
   margin: 50px;
- 
   grid-row-start: 1;
   grid-column-start: 2;
   grid-column-end:   2;
 }
 .picker2 {
-
   grid-row-start: 1;
   grid-column-start: 3;
   grid-column-end:   3;
@@ -33,17 +30,16 @@
   text-align: center;
 
 }
-  button {
-    border-radius: 10px;
- 
-    margin-left: 1220px;
-    margin-top: 50px;
-    background-color: #ebc137; /* Green */
-    border: none;
-    color: rgb(37, 20, 20);
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    }
+button {
+  border-radius: 10px;
+  margin-left: 1220px;
+  margin-top: 50px;
+  background-color: #ebc137; 
+  border: none;
+  color: rgb(37, 20, 20);
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
