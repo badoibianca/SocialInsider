@@ -4,28 +4,28 @@ const api_url = "https://app.socialinsider.io/api";
 
 const express = require("express"),
   app = express(),
-  port = process.env.PORT || 5000,
+  port = 5000,
   cors = require("cors");
 
 app.use(cors());
 app.use(express.json())
-const data = {
-  jsonrpc: '2.0',
-  id: 0,
-  method: 'socialinsider_api.get_brands',
-  params: {
-      projectname: 'API_test'
-  }
-}
 
 app.get("/brands", (req, res) => {
+  const data = {
+    jsonrpc: '2.0',
+    id: 0,
+    method: 'socialinsider_api.get_brands',
+    params: {
+        projectname: 'API_test'
+    }
+  }
   return axios(api_url , {
     headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer API_KEY_TEST'
-    }
-    , method: 'post'
-    , data: JSON.stringify(data)
+    },
+    method: 'post',
+    data: JSON.stringify(data)
 }
 ).then((response) => {
   console.log(response.data);
