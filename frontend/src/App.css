@@ -1,0 +1,49 @@
+.App {
+ 
+  height: 760px; 
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 350px 400px 400px;
+  gap: 10px;
+  grid-auto-rows: 150px 1fr 100px;;
+}
+.picker1 {
+  margin: 50px;
+ 
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end:   2;
+}
+.picker2 {
+
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end:   3;
+  margin: 50px;
+}
+.table {
+  border-radius: 15px;
+  background-color: rgb(209, 142, 41);
+  grid-row-start: 2;
+  grid-row-end:   4;
+  grid-column-start: 2;
+  grid-column-end:   3;
+  width: 760px;
+  margin: 10px;
+  text-align: center;
+
+}
+  button {
+    border-radius: 10px;
+ 
+    margin-left: 1220px;
+    margin-top: 50px;
+    background-color: #ebc137; /* Green */
+    border: none;
+    color: rgb(37, 20, 20);
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
