@@ -26,8 +26,7 @@ app.get("/brands", (req, res) => {
     },
     method: 'post',
     data: JSON.stringify(data)
-}
-).then((response) => {
+}).then((response) => {
   console.log(response.data);
   res.send(response.data);
 }).catch((err) => {
@@ -62,8 +61,7 @@ app.post("/profiles", (req, res) => {
     },
     method: 'post',
     data: JSON.stringify(dataProfiles)
-}
-).then((response) => {
+}).then((response) => {
   console.log(response.data);
   res.send(response.data);
 }).catch((err) => {
