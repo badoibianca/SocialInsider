@@ -26,13 +26,13 @@ app.get("/brands", (req, res) => {
     },
     method: 'post',
     data: JSON.stringify(data)
-}).then((response) => {
-  console.log(response.data);
-  res.send(response.data);
-}).catch((err) => {
-  console.log("failed to grab info");
-  res.send("error");
-});
+  }).then((response) => {
+    console.log(response.data);
+    res.send(response.data);
+  }).catch((err) => {
+    console.log("failed to grab info");
+    res.send("error");
+  });
 });
 
 app.post("/profiles", (req, res) => {
@@ -61,13 +61,13 @@ app.post("/profiles", (req, res) => {
     },
     method: 'post',
     data: JSON.stringify(dataProfiles)
-}).then((response) => {
-  console.log(response.data);
-  res.send(response.data);
-}).catch((err) => {
-  console.log("failed to grab info");
-  res.send("error");
-}); 
+    }).then((response) => {
+        console.log(response.data);
+        res.send(response.data);
+    }).catch((err) => {
+        console.log("failed to grab info");
+        res.send("error");
+    }); 
 });
 
 app.listen(port, () => console.log("Merge serverul " + port));
