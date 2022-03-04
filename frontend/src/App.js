@@ -59,28 +59,28 @@ function App() {
         for (const key of keys) 
         { 
           if(!datesData[key].engagement)
-           {   
+          {   
              engagement += 0
-           }
-          else
-           {   
-             engagement += datesData[key].engagement 
-           }  
           }
+          else
+          {   
+             engagement += datesData[key].engagement 
+          }  
+        }
 
-          let counter = 1
-          while((datesData[keys[keys.length - counter]].fans) == null)
-            counter++
-          fans += datesData[keys[keys.length - counter]].fans
-          //console.log(fans)
+        let counter = 1
+        while((datesData[keys[keys.length - counter]].fans) == null)
+          counter++
+        fans += datesData[keys[keys.length - counter]].fans
+        //console.log(fans)
       }
       
       const newBrand = {
-          id: i++,
-          brandName: brand.brandname,
-          totalProfiles: brand.profiles.length,
-          totalFans: fans,
-          totalEngagement: engagement
+        id: i++,
+        brandName: brand.brandname,
+        totalProfiles: brand.profiles.length,
+        totalFans: fans,
+        totalEngagement: engagement
       }
       temp.push(newBrand)
     }
