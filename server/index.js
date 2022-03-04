@@ -52,16 +52,16 @@ app.post("/profiles", (req, res) => {
           start: start,
           end: end ,
           timezone: 'Europe/London'
-      }
+        }
     }
   }
   return axios(api_url , {
     headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer API_KEY_TEST'
-    }
-    , method: 'post'
-    , data: JSON.stringify(dataProfiles)
+    },
+    method: 'post',
+    data: JSON.stringify(dataProfiles)
 }
 ).then((response) => {
   console.log(response.data);

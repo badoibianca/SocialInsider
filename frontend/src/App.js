@@ -51,21 +51,21 @@ function App() {
       
       for(const profile of brand.profiles)
       {
-          const id = profile.id
-          const type = profile.profile_type
-          const datesData = await getProfileData(id, type, value1, value2)
-          const keys = Object.keys(datesData)
+        const id = profile.id
+        const type = profile.profile_type
+        const datesData = await getProfileData(id, type, value1, value2)
+        const keys = Object.keys(datesData)
      
-          for (const key of keys) 
-          { 
-            if(!datesData[key].engagement)
-            {   
-              engagement += 0
-            }
-            else
-            {   
-              engagement += datesData[key].engagement 
-            }  
+        for (const key of keys) 
+        { 
+          if(!datesData[key].engagement)
+           {   
+             engagement += 0
+           }
+          else
+           {   
+             engagement += datesData[key].engagement 
+           }  
           }
 
           let counter = 1
@@ -74,6 +74,7 @@ function App() {
           fans += datesData[keys[keys.length - counter]].fans
           //console.log(fans)
       }
+      
       const newBrand = {
           id: i++,
           brandName: brand.brandname,
